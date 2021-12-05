@@ -71,5 +71,4 @@ async def ching(ctx):
     await ctx.reply('chong')
 
 bot.run('token')
-#py -3 C:\Users\valen\Desktop\nsi\python\python_test\bot\esclave.py
 
