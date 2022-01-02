@@ -2,15 +2,15 @@ import discord
 from discord.ext import commands 
 import asyncio
 
-description = 'oui'
+
 intents= discord.Intents().all()
-bot = commands.Bot(command_prefix="", description=description, intents=intents)
+bot = commands.Bot(command_prefix="", intents=intents)
 
 #écrit dans la console "carre" quand le bot est fonctionnel/ print "carre" in the cmd prompt when the bot is working
 @bot.event
 async def on_ready():
-    print("carre")
-    await bot.change_presence(activity=discord.Game(name='vec ta daronne'))#put the name of the game in name=""
+    print('bot prêt')
+    await bot.change_presence(activity=discord.Activity(type = discord.ActivityType.listening, name = "a song"))#put the name of the game in name=""
 
 #déplace l'utilisateur mentionné toute les 1.5sec pour un total de 11 fois/ move the pinged user every 1.5sec for a total of 11 times  
 @bot.command()
