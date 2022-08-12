@@ -65,7 +65,7 @@ async def on_member_join(member):
 async def somme(ctx, numUn: str, numDeux: str):
     await ctx.send(numUn + numDeux)
 
-#répond"chong" quand l'utilisateur commence son message par ching/ reply "chong" when the sentence of the user starts with "ching"
+#répond"pong" quand l'utilisateur commence son message par ching/ reply "pong" when the sentence of the user starts with "ching"
 @bot.command()
 async def ping(ctx):
     await ctx.reply('pong')
